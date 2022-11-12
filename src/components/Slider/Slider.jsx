@@ -10,7 +10,17 @@ const Slider = () => {
   return (
     <div className="s-container">
       <Swiper
-        className="mySwiper"
+        breakpoints={{
+          856: {
+            slidesPerView: 3,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          0: {
+            slidesPerView: 1,
+          },
+        }}
         navigation={true}
         loopFillGroupWithBlank={true}
         modules={[Navigation, Pagination]}

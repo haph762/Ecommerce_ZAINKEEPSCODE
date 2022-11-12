@@ -87,3 +87,18 @@
     background-color: rgb(198, 198, 198);
     border: none;
 }
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper>img {
+        width: 80vw;
+    }
+
+    .wrapper>:nth-child(3),
+    .wrapper>:nth-child(1) {
+        text-align: center;
+    }
+}
